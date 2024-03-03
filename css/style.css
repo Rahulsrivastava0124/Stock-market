@@ -1,0 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.card .card-body img {
+    mix-blend-mode: darken;
+}
+
+.card:hover {
+    transform: translatey(-10px);
+    transition: all 1s ease-in-out;
+}
