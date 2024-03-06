@@ -23,21 +23,21 @@
   </head>
   <body>
     <!-- TODO upper contact band  -->
-    <div class="col-lg-12 bg-danger-subtle d-flex justify-content-center"> 
-        <h6 class="p-2 me-3 d-flex align-items-center UpperBand-Text">
-          <i class="bi bi-whatsapp text-success me-1 "></i>+91 8764687243
-        </h6>
-        <h6 class="p-2 me-3 d-flex align-items-center UpperBand-Text">
-          <i class="bi bi-telephone text-primary me-1 "></i>+91 87466423874
-        </h6>
-        <h6 class="p-2 me-3 d-flex align-items-center UpperBand-Text ">
-          <i class="bi bi-envelope-at-fill text-danger me-1 "></i> Company@gmail.com
-         
-        </h6>
+    <div class="col-lg-12 bg-danger-subtle d-flex justify-content-center">
+      <h6 class="p-2 me-3 d-flex align-items-center UpperBand-Text">
+        <i class="bi bi-whatsapp text-success me-1"></i>+91 8764687243
+      </h6>
+      <h6 class="p-2 me-3 d-flex align-items-center UpperBand-Text">
+        <i class="bi bi-telephone text-primary me-1"></i>+91 87466423874
+      </h6>
+      <h6 class="p-2 me-3 d-flex align-items-center UpperBand-Text">
+        <i class="bi bi-envelope-at-fill text-danger me-1"></i>
+        Company@gmail.com
+      </h6>
     </div>
 
     <!-- TODO navbar start-->
-    
+
     <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"
@@ -108,7 +108,7 @@
             style="height: 80vh; object-fit: cover"
           />
           <div
-            class="carousel-caption  d-md-block text-start"
+            class="carousel-caption d-md-block text-start"
             style="height: 300px"
           >
             <h1 class="text-primary">
@@ -119,12 +119,10 @@
               right support
             </h4>
             <div class="d-flex mt-5">
-              <button class="btn btn-lg rounded-pill btn-outline-warning me-4">
+              <button class="btn rounded-pill btn-outline-warning me-4">
                 CONTACT US
               </button>
-              <button class="btn btn-lg rounded-pill btn-primary">
-                GET CALLBACK
-              </button>
+              <button class="btn rounded-pill btn-primary">GET CALLBACK</button>
             </div>
           </div>
         </div>
@@ -185,7 +183,7 @@
       <p class="my-2 fw-bold text-center text-secondary h6">
         RA trader Provides You Best Technical Support & Grow More Profit
       </p>
-      <div class="d-flex flex-wrap justify-content-evenly mt-5">
+      <div class="d-flex flex-wrap justify-content-center gap-4 mt-5">
         <div
           class="card card-animate rounded-4 mb-3 p-3 text-bg-warning"
           style="width: 18rem"
@@ -244,27 +242,22 @@
     </div>
 
     <!--Small About start  -->
-    <div class="col-lg-12 my-5 bg-light p-4 rounded-4">
+    <div class="container my-5 bg-light p-4 rounded-4" id="Small-About">
       <div class="d-flex flex-wrap align-items-center">
-        <div class="container w-50">
-          <h5 class="text-secondary lh-base">
-            <span class="text-primary">RA</span
-            ><span class="text-danger">Traders</span> is one of the trusted
-            names in the arena of the financial services. We provide our
-            customers and investors with the stock market services and the
-            entire gamut of advisory services at one place. We are an
-            organization giving the latest research and details on the capital
-            markets in India.
-          </h5>
-        </div>
-        <div class="container w-25">
-          <img alt="" class="img-fluid" src="./img/stockMarket.svg" />
-        </div>
+        <img alt="" class="img-fluid" width="20%" src="./img/stockMarket.svg" />
+        <h5 class="text-secondary lh-base w-50 ms-5">
+          <span class="text-primary">RA</span
+          ><span class="text-danger">Traders</span> is one of the trusted names
+          in the arena of the financial services. We provide our customers and
+          investors with the stock market services and the entire gamut of
+          advisory services at one place. We are an organization giving the
+          latest research and details on the capital markets in India.
+        </h5>
       </div>
     </div>
 
     <!--our services start -->
-    <div class="col-lg-12 my-5" id="About">
+    <div class="container-fluid my-5" id="About">
       <div class="row justify-content-around flex-wrap">
         <div class="col-3">
           <div class="list-group" id="list-tab-about" role="tablist">
@@ -287,10 +280,15 @@
               >Commodity<i class="bi bi-arrow-right ms-3"></i
             ></a>
           </div>
-          <div class="mt-lg-5">
-            <div class="card rounded-4 p-4 shadow">
+          <div class="mt-lg-5" id="Contact-card">
+            <div class="card rounded-4 p-4 shadow bg-light">
               <div class="card-body text-center">
-                <img alt="" class="img-fluid" src="/img/contact.png" />
+                <img
+                  alt=""
+                  class="img-fluid Contact-img-card"
+                  src="/img/contact.png"
+                  style="mix-blend-mode: darken"
+                />
                 <h3 class="card-title">how can we help you?</h3>
                 <button class="btn btn-primary rounded-pill mt-4">
                   <i class="bi bi-telephone me-2 rounded-pill"></i> CONTACT US
@@ -439,7 +437,7 @@
             id="price-Stock"
             role="tabpanel"
           >
-            <div class="card-group justify-content-evenly">
+            <div class="card-group gap-3 justify-content-center">
               <div class="UIcard text-bg-light border border-primary">
                 <h3
                   class="text-secondary d-flex justify-content-between align-items-center"
@@ -1326,6 +1324,9 @@
 
     <!--contact us start-->
     <div class="container my-5 bg-light rounded-4 p-5" id="Contact">
+      <h2 class="text-center text-secondary mb-4 text-decoration-underline">
+        Contact Us
+      </h2>
       <div class="d-flex flex-wrap justify-content-around">
         <div class="">
           <img
@@ -1388,78 +1389,19 @@
     </div>
 
     <!--Footer Start-->
-    <div class="container">
+    <div class="container border-top">
       <footer class="py-5">
         <div class="row">
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a class="nav-link p-0 text-body-secondary" href="#">Home</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a class="nav-link p-0 text-body-secondary" href="#"
-                  >Features</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a class="nav-link p-0 text-body-secondary" href="#">Pricing</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a class="nav-link p-0 text-body-secondary" href="#">FAQs</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a class="nav-link p-0 text-body-secondary" href="#">About</a>
-              </li>
-            </ul>
+          <div class="col-6 col-md-4 mb-3">
+            <h4>
+              <span class="text-primary">RA</span>
+              <span class="text-danger">traders</span>
+            </h4>
+            <p>
+              "Trading doesn’t just reveal your character; it also builds it if
+              you stay in the game long enough."
+            </p>
           </div>
-
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a class="nav-link p-0 text-body-secondary" href="#">Home</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a class="nav-link p-0 text-body-secondary" href="#"
-                  >Features</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a class="nav-link p-0 text-body-secondary" href="#">Pricing</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a class="nav-link p-0 text-body-secondary" href="#">FAQs</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a class="nav-link p-0 text-body-secondary" href="#">About</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column">
-              <li class="nav-item mb-2">
-                <a class="nav-link p-0 text-body-secondary" href="#">Home</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a class="nav-link p-0 text-body-secondary" href="#"
-                  >Features</a
-                >
-              </li>
-              <li class="nav-item mb-2">
-                <a class="nav-link p-0 text-body-secondary" href="#">Pricing</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a class="nav-link p-0 text-body-secondary" href="#">FAQs</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a class="nav-link p-0 text-body-secondary" href="#">About</a>
-              </li>
-            </ul>
-          </div>
-
           <div class="col-md-5 offset-md-1 mb-3">
             <form>
               <h5>Subscribe to our newsletter</h5>
@@ -1486,25 +1428,13 @@
           <p>© 2024 Company, Inc. All rights reserved.</p>
           <ul class="list-unstyled d-flex">
             <li class="ms-3">
-              <a class="link-body-emphasis" href="#">
-                <svg class="bi" height="24" width="24">
-                  <use xlink:href="#twitter"></use>
-                </svg>
-              </a>
+              <i class="bi bi-twitter h4"></i>
             </li>
             <li class="ms-3">
-              <a class="link-body-emphasis" href="#">
-                <svg class="bi" height="24" width="24">
-                  <use xlink:href="#instagram"></use>
-                </svg>
-              </a>
+              <i class="bi bi-instagram h4"></i>
             </li>
             <li class="ms-3">
-              <a class="link-body-emphasis" href="#">
-                <svg class="bi" height="24" width="24">
-                  <use xlink:href="#facebook"></use>
-                </svg>
-              </a>
+              <i class="bi bi-facebook h4"></i>
             </li>
           </ul>
         </div>
