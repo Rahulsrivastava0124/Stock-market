@@ -64,24 +64,75 @@ html {
 }
 
 /* mobile Screen  */
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 700px) {
   .UpperBand-Text {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .carousel-item img {
     height: 30vh !important;
   }
 
   .carousel-item div.carousel-caption {
-    height: 20vh !important;
+    height: 22vh !important;
+  }
+  .carousel-item div.d-flex {
+    margin-top: 2px !important ;
   }
 
-  .carousel-caption h1,
-  h4,div button.btn {
-    font-size: 1.2rem !important;
+  .carousel-item div.d-flex button {
+    font-size: 0.8rem !important;
+  }
+  .carousel-caption h1 {
+    font-size: 1.4rem;
   }
   .carousel-caption h4 {
     width: 100% !important;
+    font-size: 1rem !important;
+  }
+  .card-animate {
+    width: auto !important ;
+  }
+  #About div.row {
+    flex-direction: column !important;
+    align-content: center !important;
+  }
+  #About div.col-3,
+  #About div.col-6 {
+    width: 90% !important ;
   }
 
+  #About button {
+    margin: 0 !important;
+  }
+
+  #About div.card {
+    padding: 0 !important;
+  }
+
+  .Contact-img-card,
+  #About div#Contact-card {
+    display: none;
+  }
+  #Small-About div.d-flex {
+    justify-content: center !important;
+  }
+  #Small-About img,
+  #Small-About h5 {
+    width: 80% !important;
+    margin: 0 !important;
+    margin-top: 15px !important;
+  }
+  .UIcard {
+    margin: auto;
+    margin-bottom: 19px;
+  }
+
+  #Pricing div.col-6 {
+    width: auto !important;
+    margin: 0px 10px !important;
+  }
+
+  #Contact div.w-50 {
+    width: 100% !important;
+  }
 }
