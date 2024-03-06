@@ -1,176 +1,1521 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Stock Market </title>
-	
-	<!--    Add Bootstrap CDN-->
-	<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-	      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" rel="stylesheet">
-	<!--	Add bootstrap icons -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-	
-	<!--	Add custom css -->
-	<link href="css/style.css" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Stock Market</title>
 
+    <!--    Add Bootstrap CDN-->
+    <link
+      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      rel="stylesheet"
+    />
+    <!--	Add bootstrap icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
 
-<!--upper contact band  -->
-<div class=" bg-danger-subtle">
-    <span class="d-flex justify-content-center">
-        <span class="p-2  me-3 d-flex align-items-center">
-	        <i class="bi bi-whatsapp text-success me-1 h4"></i><span class="">+91 8764687243</span>
-        </span>
-        <span class="p-2  me-3 d-flex align-items-center">
-            <i class="bi bi-telephone text-primary me-1 h4"></i><span class="">+91 87466423874</span>
-        </span>
-        <span class="p-2  me-3 d-flex align-items-center just">
-			<i class="bi bi-envelope-at-fill text-danger me-1 h4"></i><span class=""> Company@gmail.com</span>
-        </span>
-    </span>
-</div>
+    <!--	Add custom css -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- TODO upper contact band  -->
+    <div class="col-lg-12 bg-danger-subtle d-flex justify-content-center"> 
+        <h6 class="p-2 me-3 d-flex align-items-center UpperBand-Text">
+          <i class="bi bi-whatsapp text-success me-1 "></i>+91 8764687243
+        </h6>
+        <h6 class="p-2 me-3 d-flex align-items-center UpperBand-Text">
+          <i class="bi bi-telephone text-primary me-1 "></i>+91 87466423874
+        </h6>
+        <h6 class="p-2 me-3 d-flex align-items-center UpperBand-Text ">
+          <i class="bi bi-envelope-at-fill text-danger me-1 "></i> Company@gmail.com
+         
+        </h6>
+    </div>
 
+    <!-- TODO navbar start-->
+    
+    <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><span class="text-primary h3">RA</span
+          ><span class="text-danger h3">traders </span></a
+        >
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="nav nav-underline justify-content-center">
+            <li class="nav-item">
+              <a aria-current="page" class="nav-link text-dark active" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#OurServices">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#Pricing">Pricing </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#Contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- TODO Carousel Start-->
+    <div class="carousel slide" id="carouselExampleCaptions">
+      <div class="carousel-indicators">
+        <button
+          aria-current="true"
+          aria-label="Slide 1"
+          class="active"
+          data-bs-slide-to="0"
+          data-bs-target="#carouselExampleCaptions"
+          type="button"
+        ></button>
+        <button
+          aria-label="Slide 2"
+          data-bs-slide-to="1"
+          data-bs-target="#carouselExampleCaptions"
+          type="button"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            alt="..."
+            class="d-block w-100 img-fluid"
+            src="./img/crousal1.webp"
+            style="height: 80vh; object-fit: cover"
+          />
+          <div
+            class="carousel-caption  d-md-block text-start"
+            style="height: 300px"
+          >
+            <h1 class="text-primary">
+              Feature <span class="text-warning">Goal</span>
+            </h1>
+            <h4 class="w-50">
+              Our main future goals to keep Our customers always happy with
+              right support
+            </h4>
+            <div class="d-flex mt-5">
+              <button class="btn btn-lg rounded-pill btn-outline-warning me-4">
+                CONTACT US
+              </button>
+              <button class="btn btn-lg rounded-pill btn-primary">
+                GET CALLBACK
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            alt=""
+            class="d-block w-100 img-fluid"
+            src="./img/crousal.jpg"
+            style="height: 80vh; object-fit: cover"
+          />
+          <div
+            class="carousel-caption d-md-block text-start"
+            style="height: 300px"
+          >
+            <h1 class="text-primary">
+              Customer <span class="text-warning">Priority</span>
+            </h1>
+            <h4 class="w-50">
+              Our dedicated team always tackle customer concern immediately and
+              solve concern in prior basis
+            </h4>
+            <div class="d-flex mt-5">
+              <button class="btn btn-lg rounded-pill btn-outline-warning me-4">
+                CONTACT US
+              </button>
+              <button class="btn btn-lg rounded-pill btn-primary">
+                GET CALLBACK
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        data-bs-slide="prev"
+        data-bs-target="#carouselExampleCaptions"
+        type="button"
+      >
+        <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        data-bs-slide="next"
+        data-bs-target="#carouselExampleCaptions"
+        type="button"
+      >
+        <span aria-hidden="true" class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-<!--navbar start-->
-<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary ">
-	<div class=" d-flex justify-content-between mx-5 w-100 px-5">
-		<a class="navbar-brand fw-bold" href="#"><span class="text-primary h3">RA</span><span
-				class="text-danger h3">traders
-		</span> </a>
-		<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-		        class="navbar-toggler"
-		        data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse justify-content-end  " id="navbarSupportedContent">
-			<ul class="navbar-nav nav-underline mb-2 mb-lg-0 justify-content-end">
-				<li class="nav-item">
-					<a aria-current="page" class="nav-link active" href="#">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#OurServices">Service</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Pricing </a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">About</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Contact</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</nav>
+    <!--Our Features start-->
+    <div class="container my-5" id="OurServices">
+      <h2 class="text-center text-secondary mb-4 text-decoration-underline">
+        Our Services
+      </h2>
+      <p class="my-2 fw-bold text-center text-secondary h6">
+        RA trader Provides You Best Technical Support & Grow More Profit
+      </p>
+      <div class="d-flex flex-wrap justify-content-evenly mt-5">
+        <div
+          class="card card-animate rounded-4 mb-3 p-3 text-bg-warning"
+          style="width: 18rem"
+        >
+          <div class="card-body text-center">
+            <img
+              alt=""
+              class="img-fluid rounded-3"
+              src="./img/stock.gif"
+              width="100px"
+            />
+            <h3 class="card-title">Stocks</h3>
+            <p class="card-text">
+              A Stocks is a method to track the performance of a group of assets
+              in a standardized way.
+            </p>
+          </div>
+        </div>
+        <div
+          class="card card-animate rounded-4 mb-3 p-3 text-bg-primary"
+          style="width: 18rem"
+        >
+          <div class="card-body text-center">
+            <img
+              alt=""
+              class="img-fluid rounded-3"
+              src="./img/organigram.gif"
+              width="100px"
+            />
+            <h3 class="card-title">Commodity</h3>
+            <p class="card-text">
+              A commodity market is a marketplace for buying, selling, and
+              trading raw materials or primary products.
+            </p>
+          </div>
+        </div>
+        <div
+          class="card card-animate rounded-4 mb-3 p-3 text-bg-danger"
+          style="width: 18rem"
+        >
+          <div class="card-body text-center">
+            <img
+              alt=""
+              class="img-fluid rounded-3"
+              src="./img/line-chart.gif"
+              width="100px"
+            />
+            <h3 class="card-title">Index</h3>
+            <p class="card-text">
+              An index is a method to track the performance of a group of assets
+              in a standardized way.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<!--Carousel Start-->
-<div class="carousel slide" id="carouselExampleCaptions">
-	<div class="carousel-indicators">
-		<button aria-current="true" aria-label="Slide 1" class="active" data-bs-slide-to="0"
-		        data-bs-target="#carouselExampleCaptions" type="button"></button>
-		<button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleCaptions"
-		        type="button"></button>
-	</div>
-	<div class="carousel-inner">
-		<div class="carousel-item active ">
-			<img alt="..." class="d-block w-100" src="./img/crousal1.webp" style="height: 550px;object-fit: cover">
-			<div class="carousel-caption d-none d-md-block text-start" style="height:300px">
-				<h1 class="text-primary">Feature <span class="text-warning">Goal</span></h1>
-				<h4 class="w-50">Our main future goals to keep Our customers
-					always happy with right support</h4>
-				<div class="d-flex mt-5">
-					<button class="btn btn-lg rounded-pill btn-outline-warning me-4">CONTACT US</button>
-					<button class="btn btn-lg rounded-pill btn-primary">GET CALLBACK</button>
-				</div>
-			</div>
-		</div>
-		<div class="carousel-item  ">
-			<img alt="" class="d-block w-100" src="./img/crousal.jpg" style="height: 550px;object-fit: cover">
-			<div class="carousel-caption d-none d-md-block text-start" style="height: 300px">
-				<h1 class="text-primary">Customer <span class="text-warning">Priority</span></h1>
-				<h4 class="w-50">Our dedicated team always tackle customer
-					concern immediately and solve concern in prior basis</h4>
-				<div class="d-flex mt-5">
-					<button class="btn btn-lg rounded-pill btn-outline-warning me-4">CONTACT US</button>
-					<button class="btn btn-lg rounded-pill btn-primary">GET CALLBACK</button>
-				</div>
-			</div>
-		</div>
-	
-	</div>
-	<button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleCaptions" type="button">
-		<span aria-hidden="true" class="carousel-control-prev-icon"></span>
-		<span class="visually-hidden">Previous</span>
-	</button>
-	<button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleCaptions" type="button">
-		<span aria-hidden="true" class="carousel-control-next-icon"></span>
-		<span class="visually-hidden">Next</span>
-	</button>
-</div>
+    <!--Small About start  -->
+    <div class="col-lg-12 my-5 bg-light p-4 rounded-4">
+      <div class="d-flex flex-wrap align-items-center">
+        <div class="container w-50">
+          <h5 class="text-secondary lh-base">
+            <span class="text-primary">RA</span
+            ><span class="text-danger">Traders</span> is one of the trusted
+            names in the arena of the financial services. We provide our
+            customers and investors with the stock market services and the
+            entire gamut of advisory services at one place. We are an
+            organization giving the latest research and details on the capital
+            markets in India.
+          </h5>
+        </div>
+        <div class="container w-25">
+          <img alt="" class="img-fluid" src="./img/stockMarket.svg" />
+        </div>
+      </div>
+    </div>
 
-<!--Our Services start-->
-<div class="container my-5" id="OurServices">
-	<h2 class="text-center text-secondary fw-bold">Our Services</h2>
-	<p class="my-2 fw-bold text-center text-secondary h6">RA trader Provides You Best Technical Support & Grow More
-		Profit</p>
-	<div class="d-flex flex-wrap justify-content-evenly mt-4">
-		<div class="card  rounded-4 mb-3 p-3 text-bg-warning" style="width: 18rem;">
-			<div class="card-body text-center">
-				<img alt="" class="img-fluid rounded-3" src="./img/stock.gif" width="100px">
-				<h3 class="card-title">Stocks</h3>
-				<p class="card-text">A Stocks is a method to track the performance of a group of assets in a
-					standardized way.</p>
-			</div>
-		</div>
-		<div class="card rounded-4 mb-3  p-3 text-bg-primary" style="width: 18rem;">
-			<div class="card-body text-center">
-				<img alt="" class="img-fluid rounded-3" src="./img/organigram.gif" width="100px">
-				<h3 class="card-title">Commodity</h3>
-				<p class="card-text">A commodity market is a marketplace for buying, selling, and trading raw materials
-					or primary products.</p>
-			</div>
-		</div>
-		<div class="card rounded-4 mb-3  p-3 text-bg-danger" style="width: 18rem;">
-			<div class="card-body text-center">
-				<img alt="" class="img-fluid rounded-3" src="./img/line-chart.gif" width="100px">
-				<h3 class="card-title">Index</h3>
-				<p class="card-text">An index is a method to track the performance of a group of assets in a
-					standardized way.</p>
-			</div>
-		</div>
-	</div>
-</div>
+    <!--our services start -->
+    <div class="col-lg-12 my-5" id="About">
+      <div class="row justify-content-around flex-wrap">
+        <div class="col-3">
+          <div class="list-group" id="list-tab-about" role="tablist">
+            <a
+              aria-controls="list-home"
+              class="list-group-item list-group-item-action active h4"
+              data-bs-toggle="list"
+              href="#list-Index"
+              id="list-Index-list"
+              role="tab"
+              >Stocks & Indexes <i class="bi bi-arrow-right ms-3"></i
+            ></a>
+            <a
+              aria-controls="list-profile"
+              class="list-group-item list-group-item-action h4"
+              data-bs-toggle="list"
+              href="#list-commodity"
+              id="list-commodity-list"
+              role="tab"
+              >Commodity<i class="bi bi-arrow-right ms-3"></i
+            ></a>
+          </div>
+          <div class="mt-lg-5">
+            <div class="card rounded-4 p-4 shadow">
+              <div class="card-body text-center">
+                <img alt="" class="img-fluid" src="/img/contact.png" />
+                <h3 class="card-title">how can we help you?</h3>
+                <button class="btn btn-primary rounded-pill mt-4">
+                  <i class="bi bi-telephone me-2 rounded-pill"></i> CONTACT US
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="tab-content" id="nav-tabContent-about">
+            <div
+              aria-labelledby="list-Index-list"
+              class="tab-pane fade show active"
+              id="list-Index"
+              role="tabpanel"
+            >
+              <h3>Stocks & Indexes</h3>
+              <p class="mb-4">
+                Indexes are also created to measure other financial or economic
+                data such as interest rates, inflation, or manufacturing output.
+                Indexes often serve as benchmarks against which to evaluate the
+                performance of a portfolio's returns. One popular investment
+                strategy, known as indexing, is to try to replicate such an
+                index in a passive manner rather than trying to outperform it.
+              </p>
+              <p>
+                An index is a method to track the performance of a group of
+                assets in a standardized way. Indexes typically measure the
+                performance of a basket of securities intended to replicate a
+                certain area of the market. These could be a broad-based index
+                that captures the entire market, such as the Standard & Poor's
+                500 Index or Dow Jones Industrial Average (DJIA), or more
+                specialized such as indexes that track a particular industry or
+                segment.
+              </p>
 
-<!--Small About start  -->
-<div class="container my-5 bg-light p-4 rounded-4">
-	<div class="d-flex flex-wrap align-items-center">
-		<div class="container w-50">
-			<h4 class="text-secondary">
-				<span class="text-primary">RA</span><span class="text-danger">Traders</span> is one of the trusted names
-				in the
-				arena of the
-				financial
-				services. We
-				provide our
-				customers and investors with the stock market services and the entire gamut of advisory services at one
-				place. We are an organization giving the latest research and details on the capital markets in India.
-			</h4>
-		</div>
-		<div class="container w-25">
-			<img alt="" class="img-fluid" src="./img/stockMarket.svg">
-		</div>
-	</div>
+              <h3>Key Takeaways</h3>
+              <ul>
+                <li class="mb-3">
+                  An index measures the price performance of a basket of
+                  securities using a standardized metric and methodology.
+                </li>
+                <li class="mb-3">
+                  Indexes in financial markets are often used as benchmarks to
+                  evaluate an investment's performance against.
+                </li>
+                <li class="mb-3">
+                  Passive index investing has become a popular low-cost way to
+                  replicate the returns of popular indices such as the S&P 500
+                  Index or Dow Jones Industrial Average.
+                </li>
+              </ul>
+            </div>
+            <div
+              aria-labelledby="list-commodity-list"
+              class="tab-pane fade"
+              id="list-commodity"
+              role="tabpanel"
+            >
+              <h3>Commodity</h3>
+              <p class="mb-4">
+                A commodity market is a marketplace for buying, selling, and
+                trading raw materials or primary products. There are currently
+                about 50 major commodity markets worldwide that facilitate trade
+                in approximately 100 primary commodities. Commodities are often
+                split into two broad categories: hard and soft commodities. Hard
+                commodities include natural resources that must be mined or
+                extracted—such as gold, rubber, and oil, whereas soft
+                commodities are agricultural products or livestock—such as corn,
+                wheat, coffee, sugar, soybeans, and pork.
+              </p>
 
-</div>
+              <h3>Key Takeaways</h3>
+              <ul>
+                <li class="mb-3">
+                  A commodity market involves buying, selling, or trading a raw
+                  product, such as oil, gold, or coffee.
+                </li>
+                <li class="mb-3">
+                  There are hard commodities, which are generally natural
+                  resources, and soft commodities, which are livestock or
+                  agricultural goods.
+                </li>
+                <li class="mb-3">
+                  Spot commodities markets involve immediate delivery, while
+                  derivatives markets entail delivery in the future.
+                </li>
+                <li class="mb-3">
+                  Investors can gain exposure to commodities by investing in
+                  companies that have exposure to commodities or investing in
+                  commodities directly via futures contracts.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!--pricing Start -->
+    <div class="col-lg-10 m-auto my-5" id="Pricing">
+      <h2 class="text-center text-secondary mb-4 text-decoration-underline">
+        Pricing
+      </h2>
+      <div class="col-6 m-auto">
+        <div
+          class="list-group gap-4"
+          id="list-tab-price"
+          role="tablist"
+          style="flex-direction: row !important"
+        >
+          <a
+            aria-controls="list-home"
+            class="list-group-item list-group-item-action active text-center fw-bold rounded-3"
+            data-bs-toggle="list"
+            href="#price-Stock"
+            id="list-Stock-price"
+            role="tab"
+            >Stock</a
+          >
+          <a
+            aria-controls="list-profile"
+            class="list-group-item list-group-item-action border text-center fw-bold rounded-3"
+            data-bs-toggle="list"
+            href="#price-index"
+            id="list-index-price"
+            role="tab"
+            >Index</a
+          >
+          <a
+            aria-controls="list-messages"
+            class="list-group-item list-group-item-action border text-center fw-bold rounded-3"
+            data-bs-toggle="list"
+            href="#price-Commodity"
+            id="list-Commodity-price"
+            role="tab"
+            >Commodity</a
+          >
+        </div>
+      </div>
+      <div class="col-12 mt-3">
+        <div class="tab-content" id="nav-tabContent-price">
+          <div
+            aria-labelledby="list-Stock-list "
+            class="tab-pane fade show active"
+            id="price-Stock"
+            role="tabpanel"
+          >
+            <div class="card-group justify-content-evenly">
+              <div class="UIcard text-bg-light border border-primary">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Basic package</span
+                  ><span
+                    class="text-sm-center bg-primary-subtle p-1 rounded h6 text-primary"
+                    >Month
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.19,201/-</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Basic Service </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 4-5 calls in a week </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>15% To 20% Risk </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Service & Support Via SMS By Phone</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+              <div class="UIcard text-bg-light border border-primary">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Basic package</span
+                  ><span
+                    class="text-sm-center bg-primary-subtle p-1 rounded h6 text-primary"
+                    >Quarterly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.51,555/-</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Basic Service </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 4-5 calls in a week </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>15% To 20% Risk </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Service & Support Via SMS By Phone</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+              <div class="UIcard text-bg-light border border-primary">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Basic package</span
+                  ><span
+                    class="text-sm-center bg-primary-subtle p-1 rounded h6 text-primary"
+                    >Half Yearly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.80,555/-</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Basic Service </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 4-5 calls in a week </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>15% To 20% Risk </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Service & Support Via SMS By Phone</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+              <div class="UIcard text-bg-light border border-secondary">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Silver</span
+                  ><span
+                    class="text-sm-center border bg-secondary-subtle p-1 rounded h6 text-secondary"
+                    >Monthly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.41,555/-</p>
+                <p>(Asset Under)</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Assets Under Advice % Based</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Research & Result Based Calls </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>2 calls in a week</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 4 Special Calls In a Month</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 6% To 10% Risk</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Service & Support Via SMS By Phone</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
 
-<!--Add Bootstrap CDN-->
-<script crossorigin="anonymous"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+              <div class="UIcard text-bg-light border border-secondary">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Silver</span
+                  ><span
+                    class="text-sm-center bg-secondary-subtle p-1 rounded h6 text-secondary"
+                    >Quarterly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.82,291/-</p>
+                <p>(Min Inv 1.5 CR)</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Assets Under Advice % Based</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Research & Result Based Calls </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>2 calls in a week</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 4 Special Calls In a Month</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 6% To 10% Risk</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Service & Support Via SMS By Phone</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+              <div class="UIcard text-bg-light border border-secondary">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Silver</span
+                  ><span
+                    class="text-sm-center bg-secondary-subtle p-1 rounded h6 text-secondary"
+                    >Half Yearly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.1,41,555/-</p>
+                <p>(Min Inv 1.5 CR)</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Assets Under Advice % Based</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Research & Result Based Calls </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>2 calls in a week</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 4 Special Calls In a Month</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 6% To 10% Risk</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Service & Support Via SMS By Phone</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+              <div class="UIcard text-bg-light border border-warning">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Gold</span
+                  ><span
+                    class="text-sm-center bg-warning-subtle p-1 rounded h6 text-warning"
+                    >Monthly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.85,389/-</p>
 
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Assets Under Advice % Based</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Gold Special Calls</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>16 calls In Month</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 6% To 9% Risk</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Service & Support Via SMS By Phone & WhatsApp</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+              <div class="UIcard text-bg-light border border-warning">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Gold</span
+                  ><span
+                    class="text-sm-center bg-warning-subtle p-1 rounded h6 text-warning"
+                    >Quarterly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.1,99,999/-</p>
+                <p>(Min Inv 3 CR)</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Assets Under Advice % Based</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Gold Special Calls</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>16 calls In Month</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 6% To 9% Risk</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Service & Support Via SMS By Phone & WhatsApp</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+              <div class="UIcard text-bg-light border border-warning">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Gold</span
+                  ><span
+                    class="text-sm-center bg-warning-subtle p-1 rounded h6 text-warning"
+                    >Half Yearly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.3,99,999/-</p>
+                <p>(Min Inv 3 CR)</p>
 
-</body>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Assets Under Advice % Based</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Gold Special Calls</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>16 calls In Month</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 6% To 9% Risk</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Service & Support Via SMS By Phone & WhatsApp</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-labelledby="list-index-price"
+            class="tab-pane fade"
+            id="price-index"
+            role="tabpanel"
+          >
+            <div class="card-group justify-content-evenly">
+              <div class="UIcard text-bg-light border border-primary">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Basic package</span
+                  ><span
+                    class="text-sm-center bg-primary-subtle p-1 rounded h6 text-primary"
+                    >Month
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs. 20,500/-</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Basic Service </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 4-5 calls in a week </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>15% To 20% Risk </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Service & Support Via SMS By Phone</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+              <div class="UIcard text-bg-light border border-primary">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Basic package</span
+                  ><span
+                    class="text-sm-center bg-primary-subtle p-1 rounded h6 text-primary"
+                    >Quarterly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.53,777/-</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Basic Service </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 4-5 calls in a week </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>15% To 20% Risk </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Service & Support Via SMS By Phone</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+              <div class="UIcard text-bg-light border border-primary">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Basic package</span
+                  ><span
+                    class="text-sm-center bg-primary-subtle p-1 rounded h6 text-primary"
+                    >Half Yearly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.81,221/-</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Basic Service </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 4-5 calls in a week </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>15% To 20% Risk </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Service & Support Via SMS By Phone</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+              <div class="UIcard text-bg-light border border-secondary">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Silver</span
+                  ><span
+                    class="text-sm-center border bg-secondary-subtle p-1 rounded h6 text-secondary"
+                    >Monthly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.40,444/-</p>
+                <p>(Asset Under)</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Assets Under Advice % Based</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Research & Result Based Calls </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>2 calls in a week</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 4 Special Calls In a Month</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 6% To 10% Risk</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Service & Support Via SMS By Phone</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+
+              <div class="UIcard text-bg-light border border-secondary">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Silver</span
+                  ><span
+                    class="text-sm-center bg-secondary-subtle p-1 rounded h6 text-secondary"
+                    >Quarterly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.83,333/-</p>
+                <p>(Min Inv 1.5 CR)</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Assets Under Advice % Based</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Research & Result Based Calls </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>2 calls in a week</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 4 Special Calls In a Month</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 6% To 10% Risk</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Service & Support Via SMS By Phone</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+              <div class="UIcard text-bg-light border border-secondary">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Silver</span
+                  ><span
+                    class="text-sm-center bg-secondary-subtle p-1 rounded h6 text-secondary"
+                    >Half Yearly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.1,45,999/-</p>
+                <p>(Min Inv 1.5 CR)</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Assets Under Advice % Based</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Research & Result Based Calls </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>2 calls in a week</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 4 Special Calls In a Month</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 6% To 10% Risk</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Service & Support Via SMS By Phone</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+              <div class="UIcard text-bg-light border border-warning">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Gold</span
+                  ><span
+                    class="text-sm-center bg-warning-subtle p-1 rounded h6 text-warning"
+                    >Monthly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.83,333/-</p>
+
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Assets Under Advice % Based</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Gold Special Calls</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>16 calls In Month</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 6% To 9% Risk</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Service & Support Via SMS By Phone & WhatsApp</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+              <div class="UIcard text-bg-light border border-warning">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Gold</span
+                  ><span
+                    class="text-sm-center bg-warning-subtle p-1 rounded h6 text-warning"
+                    >Quarterly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.1,99,999/-</p>
+                <p>(Min Inv 3 CR)</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Assets Under Advice % Based</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Gold Special Calls</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>16 calls In Month</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 6% To 9% Risk</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Service & Support Via SMS By Phone & WhatsApp</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+              <div class="UIcard text-bg-light border border-warning">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Gold</span
+                  ><span
+                    class="text-sm-center bg-warning-subtle p-1 rounded h6 text-warning"
+                    >Half Yearly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.3,99,999/-</p>
+                <p>(Min Inv 3 CR)</p>
+
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Assets Under Advice % Based</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Gold Special Calls</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>16 calls In Month</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 6% To 9% Risk</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Service & Support Via SMS By Phone & WhatsApp</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-labelledby="list-Commodity-price"
+            class="tab-pane fade"
+            id="price-Commodity"
+            role="tabpanel"
+          >
+            <div class="card-group justify-content-evenly">
+              <div class="UIcard text-bg-light border border-primary">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Basic package</span
+                  ><span
+                    class="text-sm-center bg-primary-subtle p-1 rounded h6 text-primary"
+                    >Month
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs. 15,999/-</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Basic Service </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 3-4 calls in a week </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>15% To 20% Risk </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Service & Support Via SMS By Phone</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+              <div class="UIcard text-bg-light border border-primary">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Basic package</span
+                  ><span
+                    class="text-sm-center bg-primary-subtle p-1 rounded h6 text-primary"
+                    >Quarterly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.43,333/-</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Basic Service </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 4-5 calls in a week </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>15% To 20% Risk </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Service & Support Via SMS By Phone</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+              <div class="UIcard text-bg-light border border-primary">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Basic package</span
+                  ><span
+                    class="text-sm-center bg-primary-subtle p-1 rounded h6 text-primary"
+                    >Half Yearly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.71,777/</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Basic Service </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 4-5 calls in a week </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>15% To 20% Risk </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Service & Support Via SMS By Phone</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+              <div class="UIcard text-bg-light border border-secondary">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Silver</span
+                  ><span
+                    class="text-sm-center border bg-secondary-subtle p-1 rounded h6 text-secondary"
+                    >Monthly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs. 44,444/-</p>
+                <p>(Asset Under)</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Assets Under Advice % Based</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Research & Result Based Calls </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>2 calls in a week</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 4 Special Calls In a Month</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 6% To 10% Risk</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Service & Support Via SMS By Phone</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+
+              <div class="UIcard text-bg-light border border-secondary">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Silver</span
+                  ><span
+                    class="text-sm-center bg-secondary-subtle p-1 rounded h6 text-secondary"
+                    >Quarterly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.83,333/-</p>
+                <p>(Min Inv 1.5 CR)</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Assets Under Advice % Based</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Research & Result Based Calls </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>2 calls in a week</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 4 Special Calls In a Month</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 6% To 10% Risk</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Service & Support Via SMS By Phone</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+              <div class="UIcard text-bg-light border border-secondary">
+                <h3
+                  class="text-secondary d-flex justify-content-between align-items-center"
+                >
+                  <span class="">Silver</span
+                  ><span
+                    class="text-sm-center bg-secondary-subtle p-1 rounded h6 text-secondary"
+                    >Half Yearly
+                  </span>
+                </h3>
+                <p class="h4 fw-bold text-secondary">Rs.1,77,777/-</p>
+                <p>(Min Inv 1.5 CR)</p>
+                <ul class="lists">
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> Assets Under Advice % Based</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Research & Result Based Calls </span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>2 calls in a week</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 4 Special Calls In a Month</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span> 6% To 10% Risk</span>
+                  </li>
+                  <li class="list">
+                    <i class="bi bi-check h3"></i>
+                    <span>Service & Support Via SMS By Phone</span>
+                  </li>
+                </ul>
+                <a class="action" href="#"> Get started </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--contact us start-->
+    <div class="container my-5 bg-light rounded-4 p-5" id="Contact">
+      <div class="d-flex flex-wrap justify-content-around">
+        <div class="">
+          <img
+            alt=""
+            class="img-fluid"
+            src="/img/Contact-us.gif"
+            style="mix-blend-mode: darken"
+            width="500px"
+          />
+        </div>
+        <div class="container w-50">
+          <form class="row mt-lg-5">
+            <div class="col-md-6 mb-3">
+              <label class="form-label" for="inputname4">Name</label>
+              <input
+                class="form-control"
+                id="inputname4"
+                required
+                type="text"
+              />
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label" for="inputemail">Email</label>
+              <input
+                class="form-control"
+                id="inputemail"
+                required
+                type="email"
+              />
+            </div>
+            <div class="col-12 mb-3">
+              <label class="form-label" for="inputSubject">Subject</label>
+              <input
+                class="form-control"
+                id="inputSubject"
+                placeholder="1234 Main St"
+                required
+                type="text"
+              />
+            </div>
+            <div class="mb-12 col-12 mb-3">
+              <label class="form-label" for="exampleFormControlTextarea1"
+                >Message</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                required
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="mt-4 w-100">
+              <button class="btn btn-primary col-12" type="submit">
+                Send Message <i class="bi bi-send ms-3"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--Footer Start-->
+    <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a class="nav-link p-0 text-body-secondary" href="#">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link p-0 text-body-secondary" href="#"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link p-0 text-body-secondary" href="#">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link p-0 text-body-secondary" href="#">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link p-0 text-body-secondary" href="#">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a class="nav-link p-0 text-body-secondary" href="#">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link p-0 text-body-secondary" href="#"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link p-0 text-body-secondary" href="#">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link p-0 text-body-secondary" href="#">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link p-0 text-body-secondary" href="#">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a class="nav-link p-0 text-body-secondary" href="#">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link p-0 text-body-secondary" href="#"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link p-0 text-body-secondary" href="#">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link p-0 text-body-secondary" href="#">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a class="nav-link p-0 text-body-secondary" href="#">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label class="visually-hidden" for="newsletter1"
+                  >Email address</label
+                >
+                <input
+                  class="form-control"
+                  id="newsletter1"
+                  placeholder="Email address"
+                  type="text"
+                />
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+        >
+          <p>© 2024 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#">
+                <svg class="bi" height="24" width="24">
+                  <use xlink:href="#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#">
+                <svg class="bi" height="24" width="24">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#">
+                <svg class="bi" height="24" width="24">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <!--Add Bootstrap CDN-->
+    <script
+      crossorigin="anonymous"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+  </body>
 </html>
