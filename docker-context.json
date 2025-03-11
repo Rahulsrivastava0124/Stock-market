@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "name": "status-website",
+  "description": "Dockerized status website using Nginx",
+  "maintainer": "Your Name <your.email",
+  "ports": ["80"],
+  "volumes": ["/usr/share/nginx/html"],
+  "environment": {
+    "NGINX_HOST": "test.drsumananandjha.com",
+    "NGINX_PORT": "80"
+  }
+}
